@@ -36,12 +36,7 @@ $array = [
                 'o_1' => 'cbcd'
             ]
         ],
-        'liLineNumber' => '1',
-        'liDescriptions' => [
-            'Description' => 'One Monthly delivery charge'
-        ],
-        'liCost_lineCostNet' => '45',
-        'liCost_lineVATCode' => 'Z'
+        'liLineNumber' => '1'
     ],
     [
         'liExtrinsics' => [
@@ -51,12 +46,7 @@ $array = [
                 'o_1' => 'KBCD' //in upper case
             ]
         ],
-        'liLineNumber' => '2',
-        'liDescriptions' => [
-            'Description' => 'Prednisolone 2.5mg Tab[28]'
-        ],
-        'liCost_lineCostNet' => '0.6',
-        'liCost_lineVATCode' => 'Z'
+        'liLineNumber' => '2'
     ],
     [
         'liExtrinsics' => [
@@ -66,12 +56,7 @@ $array = [
                 'o_1' => 'abcd'
             ]
         ],
-        'liLineNumber' => '3',
-        'liDescriptions' => [
-            'Description' => 'Modigraf 0.2mg Oral Susp [50]'
-        ],
-        'liCost_lineCostNet' => '191.65',
-        'liCost_lineVATCode' => 'Z'
+        'liLineNumber' => '3'
     ]
 ];
 
