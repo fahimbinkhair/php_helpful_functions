@@ -48,7 +48,7 @@ $array = [
             'RXDate' => '28/03/2020',
             'ItemNumber' => 'KHT0328118',
             'otherInfo' => [
-                'o_1' => 'KBCD'
+                'o_1' => 'KBCD' //in upper case
             ]
         ],
         'liLineNumber' => '2',
