@@ -22,7 +22,7 @@ function multiSortAsc(array $array, string $keys): array
         }
 
         return $element;
-    }, $array), SORT_ASC, $array);
+    }, $array), SORT_ASC, SORT_NATURAL|SORT_FLAG_CASE, $array);
 
     return $array;
 }
@@ -30,7 +30,11 @@ function multiSortAsc(array $array, string $keys): array
 $array = [
     [
         'liExtrinsics' => [
-            'RXDate' => '28/03/2021'
+            'RXDate' => '28/03/2021',
+            'ItemNumber' => 'XHT0328118',
+            'otherInfo' => [
+                'o_1' => 'cbcd'
+            ]
         ],
         'liLineNumber' => '1',
         'liDescriptions' => [
@@ -41,7 +45,11 @@ $array = [
     ],
     [
         'liExtrinsics' => [
-            'RXDate' => '28/03/2020'
+            'RXDate' => '28/03/2020',
+            'ItemNumber' => 'KHT0328118',
+            'otherInfo' => [
+                'o_1' => 'KBCD'
+            ]
         ],
         'liLineNumber' => '2',
         'liDescriptions' => [
@@ -52,27 +60,20 @@ $array = [
     ],
     [
         'liExtrinsics' => [
-            'RXDate' => '28/03/2019'
+            'RXDate' => '28/03/2019',
+            'ItemNumber' => 'BHT0328118',
+            'otherInfo' => [
+                'o_1' => 'abcd'
+            ]
         ],
-        'liLineNumber' => '4',
+        'liLineNumber' => '3',
         'liDescriptions' => [
             'Description' => 'Modigraf 0.2mg Oral Susp [50]'
         ],
         'liCost_lineCostNet' => '191.65',
         'liCost_lineVATCode' => 'Z'
-    ],
-    [
-        'liExtrinsics' => [
-            'RXDate' => '28/03/2019'
-        ],
-        'liLineNumber' => '5',
-        'liDescriptions' => [
-            'Description' => 'Cellcept 1g/5ml 175ml <1>'
-        ],
-        'liCost_lineCostNet' => '115.16',
-        'liCost_lineVATCode' => 'Z'
     ]
 ];
 
 
-print_r(multiSortAsc($array, 'liExtrinsics->RXDate'));
+print_r(multiSortAsc($array, 'liExtrinsics->otherInfo->o_1'));
